@@ -5,11 +5,9 @@ int main(){
 
         char input[512];
 
-        char strFile[512][512];
+        char strFile[512];
 
-        int count=0;
-
-        int i;
+        int line;
 
         //char *lw = ".LW", *lm = ".LM", *ls = ".LS", *ft = ".FT";
 
@@ -19,18 +17,15 @@ int main(){
 
         while(fgets(input, 512, pToFile)){
               
-               strFile[count]= input; /**Here, I get a bad type assignment error. This is more 
-                                        or less sudo code for what I want the program to be doing **/
-
-               count++;
+               strncat(strFile, input, 512); /** THis seems to be producing some unexpected 
+                                                output in strFile **/
         }
 
 
-        for(i=0; i<4; i++){
       
-        printf("%s", strFile[i]);
+        printf("%s", strFile);
                 
-        }
+   
 
                         
    /** Test the substrs and the flags**/ 
