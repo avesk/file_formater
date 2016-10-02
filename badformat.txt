@@ -1,0 +1,7 @@
+I               am    a    poorly
+
+  Formatted      file.       I
+I      need      all     of     this
+
+
+whitespace      eliminated.
