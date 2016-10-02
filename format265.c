@@ -19,7 +19,8 @@ int main(){
 
         while(fgets(input, 512, pToFile)){
               
-               strFile[count]= input;
+               strFile[count]= input; /**Here, I get a bad type assignment error. This is more 
+                                        or less sudo code for what I want the program to be doing **/
 
                count++;
         }
